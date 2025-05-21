@@ -1,0 +1,22 @@
+#include<stdio.h>
+int search(int n,int a[],int ele)
+{
+    int i;
+    for(i=0;i<n;i++)
+    if(ele==a[i])
+    return i;
+return -1;
+}
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    int a[n],i,ele;
+    for(i=0;i<n;i++)
+    scanf("%d",&a[i]);
+    scanf("%d",&ele);
+    if(ele!=-1)
+    printf("yes");
+else
+printf("no");
+}
